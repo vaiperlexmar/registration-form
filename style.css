@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+form {
+    float: right;
+    width: 40%;
+    margin: auto;
+}
+
+#background {
+    max-width: 41%;
+    height: auto;
+}
+
+h2 {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    color: #3B3B3B;
+    text-align: center;
+}
+
+input {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: gray;
+
+    width: 25vw;
+    height: 6.25vh;
+
+    border: 2px solid gray;
+    border-radius: 1rem;
+
+    padding: 0 4vw;
+    margin: 2vh 4vw;
+}
+
+#name {
+    background: url(/img/icons/User.svg) no-repeat left 2% center;
+    background-size: 7% auto;
+}
+
+#email {
+    background: url(/img/icons/Envelope.svg) no-repeat left 2% center;
+    background-size: 7% auto;
+}
+
+#password {
+    background: url(/img/icons/Lock.svg) no-repeat left 2% center;
+    background-size: 6% auto;
+}
+
+#privacy-policy {
+    text-align: center;
+    color: grey;
+}
+
+a {
+    text-decoration: none;
+    color: #165E91;
+}
+
+#submit {
+    text-align: center;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+
+    display: block;
+    margin: 3vh auto;
+}
+
+footer {
+    color: gray;
+    text-align: center;
+}
+
+footer>p>a {
+    color: red;
+}
+
+#password:invalid {
+    border: 2px solid #ff4e4e;
+}
+
+#password:required {
+    border: 2px solid gray;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #f74343;
+}
